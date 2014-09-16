@@ -7,6 +7,5 @@
 <div class="btn"><a href="#" class="button">Team Registration</a></div>
 
 
-<div class="btn-grey-small"><a href="#">Admin Login</a></div>
 
 </div>

@@ -1,10 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-</head>
+<div>
+<div class="btn-grey-small"><a href="#">Admin Login</a></div>
 
-<body>
-</body>
-</html>
+</div>
