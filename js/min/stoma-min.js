@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#myform").validate({submitHandler:function(n){$(n).submit()}})});

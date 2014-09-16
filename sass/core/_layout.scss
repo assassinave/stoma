@@ -5,3 +5,19 @@ body {
 .container {
 	margin: 6em;
 }
+
+table {
+	tr {
+		position: relative;
+		td {
+			color: $orange;
+			font-weight: 200;
+			text-align:right;
+			padding: 9px 9px 9px 0;
+			
+			h1 {
+				text-align:left;
+			}
+		}
+	}
+}
