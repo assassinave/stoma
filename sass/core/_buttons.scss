@@ -1,0 +1,76 @@
+/* CSS Document */
+.btn {
+	clear: both; 
+	position: relative;
+		a {
+			background-color: $orange;
+			color: $white;
+			font-size: 0.8em;
+			margin: 1em 0 0 0;
+			padding: 0.5em;
+			font-weight: 500;
+			font-family: "futuraBT-bold", Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			max-width: 400px;
+			text-decoration: none;
+			position: relative;
+			display: block;
+		}
+}
+
+.btn-grey-small {
+	clear: both; 
+	position: relative;
+		a {
+			background-color: $grey;
+			color: $white;
+			font-size: 0.4em;
+			margin: 1em 0 0 0;
+			padding: 0.4em;
+			font-weight: 500;
+			font-family: "futuraBT-bold", Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+			max-width: 400px;
+			text-decoration: none;
+			position: relative;
+			display: block;
+			max-width: 140px;
+		}
+		
+}
+
+
+/*
+a.button {
+    font-family:verdana; 
+}
+
+a.button:before {
+     content:"";
+     width:56px;
+     height:56px;
+     background: -moz-linear-gradient( right top , #eee 0%,#FFF 100%);
+     background: -webkit-linear-gradient( right top , #eee 0%,#FFF 100%);
+     -moz-transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+     display:block;
+     position:absolute;
+     top:0px;
+     right:-28px;
+     z-index:-1;
+}
+
+a.button:after {
+     content:"";
+     width:56px;
+     height:56px;
+     background: -moz-linear-gradient( right top , $orange 0%,$orange 100%);
+     background: -webkit-linear-gradient( right top , $orange 0%,$orange 100%);
+     -moz-transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+     display:block;
+     position:absolute;
+     top:0px;
+     right:-16px;
+     z-index:-1;
+
+}
+*/
