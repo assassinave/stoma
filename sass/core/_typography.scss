@@ -16,6 +16,9 @@ h3 {
 	font-size: 2em;
 	color: $orange;
 	font-weight: 200;
+	span {
+		color: $white;
+	}
 }
 
 P {
@@ -23,5 +26,3 @@ P {
 	color: $white;
 	font-weight: 200;
 }
-
-

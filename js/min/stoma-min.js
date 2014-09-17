@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#myform").validate({submitHandler:function(n){$(n).submit()}})});
+$(document).ready(function(){$("#myform").validate({submitHandler:function(n){$(n).submit()}}),$(".select-button").click(function(){$(".question-info").hide(),$(".question-confirm").show()}),$(".choose-button").click(function(){$(".question-info").show(),$(".question-confirm").hide()})});

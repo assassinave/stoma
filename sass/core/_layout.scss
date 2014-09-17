@@ -6,6 +6,10 @@ body {
 	margin: 6em;
 }
 
+.padding {
+	margin: 2em;
+}
+
 table {
 	tr {
 		position: relative;
@@ -20,4 +24,35 @@ table {
 			}
 		}
 	}
+}
+
+
+.image {
+	background-color: $grey-light; 
+	width: 100%;
+	height: 600px; 
+}
+
+.stoma-type {
+}
+
+.target {
+	height: 180px;
+}
+
+.stoma-info {
+	height: 300px;
+	width: 70%;
+	float: left;
+}
+
+.stoma-next {
+	height: 300px;
+	width: 30%;
+	float: right;
+	text-align: right;
+}
+
+.hide {
+	display: none;
 }

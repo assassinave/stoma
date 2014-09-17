@@ -14,14 +14,6 @@ $database->insert('test', [
 ]);
 }
 
-/*
-$test = $database->get("test", "test_id", [
-	"AND" => [
-		"user_id" => $id,
-		"taken" => "no"
-	]
-]);
-*/
 	
 header( 'Location: questions.php?id='.$id.'' );	
 ?>
