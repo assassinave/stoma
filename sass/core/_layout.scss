@@ -78,7 +78,6 @@ table {
 
 .stoma-next {
 	height: 300px;
-	width: 30%;
 	float: right;
 	text-align: right;
 }
@@ -97,13 +96,40 @@ table {
 	height: 260px;
 	float: left;
 	background-color: $orange;
-	margin: 0 0 20px 20px;
+	margin: 0 0 1em 1em;
 	padding: 16px;
+	
+	&.correct {
+		background-color: $orange;
+		.title {
+			color: $white;
+			padding: 10px;
+			text-align: center;
+		}
+	}
+	&.false {
+		background-color: $white;
+		.title {
+			color: $grey-dark;
+			padding: 10px;
+			text-align: center;
+		}
+	}
+	
 	.image {
 		background-color: $white; 
 		height: 230px;	
 	}
-	.title {
-		
+	
+}
+
+.results-header {
+	padding: 0.9em; 
+	background-color: $white;
+	color: $orange;
+	margin: 1em;
+	width: 70%;
+	span {
+		color: $grey;
 	}
 }

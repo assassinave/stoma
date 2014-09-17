@@ -5,7 +5,10 @@ $database = new medoo();
 $id = $_GET['id'];
  
 $correct = $database->count("test", [
+    "AND" => [
 		"user_id" => $id,
+		"correct" => "yes"
+	]
 ]);
  
 $stomacount = $database->count("stoma", [
