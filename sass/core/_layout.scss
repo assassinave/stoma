@@ -25,6 +25,37 @@ table {
 	}
 }
 
+table {
+	&.admin {
+		tr {
+			position: relative;
+			td {
+				color: $orange;
+				font-weight: 200;
+				text-align:left;
+				padding: 8px; 
+				border: 6px solid $grey-dark;
+				background-color: $grey;
+				&.submit {
+					padding: 0;
+					margin: 0;
+					width: 10%;
+				}
+				&.name {
+					width: 30%;
+				}
+				&.hospital {
+					width: 60%;
+				}
+				h1 {
+					text-align:left;
+				}
+			}
+		}
+	}
+}
+
+
 
 .image {
 	background-color: $grey-light; 
@@ -54,4 +85,25 @@ table {
 
 .hide {
 	display: none;
+}
+
+.scroll {
+	overflow-y:scroll;
+	height: 600px;
+}
+
+.results-pod {
+	width: 26%;
+	height: 260px;
+	float: left;
+	background-color: $orange;
+	margin: 0 0 20px 20px;
+	padding: 16px;
+	.image {
+		background-color: $white; 
+		height: 230px;	
+	}
+	.title {
+		
+	}
 }

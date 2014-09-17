@@ -61,6 +61,10 @@ function getPosition(element) {
 
 alert("The image is located at: " + position.x + ", " + position.y);
 
+// http://www.kirupa.com/snippets/move_element_to_click_position.htm
+
 </script>
+
+
 </body>
 </html>

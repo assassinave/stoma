@@ -1,7 +1,22 @@
 <div class="container">
-  <h1>Congratulations!</h1>
-  <p>You correctly sited</p>
-  <h3><?php echo $correct; ?> of <?php echo $stomacount; ?> Stomas</h3>
-  <div class="btn"><a href="#" class="button">Review Answers</a></div>
-  <div class="btn"><a href="index.php" class="button">Try Again</a></div>
+  <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+    <table>
+      <tr>
+        <td></td>
+        <td><h1>Admin</h1></td>
+      </tr>
+      <tr>
+        <td>Username</td>
+        <td><input name="username" type="text" id="username"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input name="password" type="text" id="password"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input name="go" type="submit" id="go" value="Go"></td>
+      </tr>
+    </table>
+  </form>
 </div>
