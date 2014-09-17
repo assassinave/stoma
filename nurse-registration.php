@@ -14,7 +14,6 @@ $insertId = $database->insert('user', [
 header( 'Location: start.php?id='.$insertId.'' );
 }
 ?>
-
 <?php include ("inc/header.php");?>
 <?php include ("inc/nurse-reg.php");?>
 <?php include ("inc/footer.php");?>

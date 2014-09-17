@@ -6,9 +6,13 @@ $database = new medoo();
 $id = $_GET['id'];
  
  
+// Number of active stoma questions 
+$stomacount = $database->count("stoma", [
+		"active" => "true"
+]);
+ 
  
 // Check to see if the test is being updated 
- 
 if ($_GET['test']) { 
 
 $test = $_GET['test'];
@@ -27,7 +31,6 @@ header( 'Location: questions.php?id='.$id.'' );
 } else {
  
 // If the test isn't being updated display next test
-
 $nexttest = $database->get("test", ["test_id", "stoma_id"], [
 	"AND" => [
 		"user_id" => $id,
@@ -37,9 +40,8 @@ $nexttest = $database->get("test", ["test_id", "stoma_id"], [
 
 
 // If the tests have finished 
-
 if (!isset($nexttest["test_id"]) || empty($nexttest["test_id"])) {
-   echo "end of tests";
+header( 'Location: results.php?id='.$id.'' );
 }
 
 $testdetails = $database->select("stoma", "*", [
