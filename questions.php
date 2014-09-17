@@ -1,7 +1,32 @@
-<?php 
-$id = $_GET['id'];
+<?php
+
+// Setup page
 require_once 'inc/medoo.min.php';
 $database = new medoo();
+$id = $_GET['id'];
+ 
+ 
+ 
+// Check to see if the test is being updated 
+ 
+if ($_GET['test']) { 
+
+$test = $_GET['test'];
+
+$database->update("test", [
+ "taken"=>"yes",
+ "position"=>""
+  ],
+  [
+"test_id"=>$test
+]);
+
+
+header( 'Location: questions.php?id='.$id.'' );
+
+} else {
+ 
+// If the test isn't being updated display next test
 
 $nexttest = $database->get("test", ["test_id", "stoma_id"], [
 	"AND" => [
@@ -9,6 +34,13 @@ $nexttest = $database->get("test", ["test_id", "stoma_id"], [
 		"taken" => "no"
 	]
 ]);
+
+
+// If the tests have finished 
+
+if (!isset($nexttest["test_id"]) || empty($nexttest["test_id"])) {
+   echo "end of tests";
+}
 
 $testdetails = $database->select("stoma", "*", [
 	"AND" => [
@@ -23,6 +55,7 @@ foreach($testdetails as $data)
 	$info = $data["info"];
 }
 
+} 
 
 
 ?>
