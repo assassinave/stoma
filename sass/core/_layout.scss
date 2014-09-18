@@ -7,7 +7,7 @@ body {
 }
 
 .padding {
-	margin: 3em;
+	margin: 2em;
 }
 
 table {
@@ -127,8 +127,36 @@ table {
 	background-color: $white;
 	color: $orange;
 	margin: 1em;
-	width: 70%;
+	width: 80%;
 	span {
 		color: $grey;
 	}
+}
+
+.question-image {
+	.counter {
+		position: absolute; 
+		left: 1em; 
+		top: 1em;
+		background-color: $orange;
+		padding: 0.4em; 
+		display: inline;
+		float: left;
+		p {
+			padding: 0; 
+			margin: 0;
+			font-weight: 800;
+		}
+		
+		
+	}
+
+	
+}
+
+
+.orange-home {
+		position: absolute; 
+		right: 1em;
+		top: 1em ;	
 }

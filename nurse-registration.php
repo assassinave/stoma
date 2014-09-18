@@ -11,7 +11,7 @@ $insertId = $database->insert('user', [
 	'email' => $_POST['email']
 ]);
 
-header( 'Location: start.php?id='.$insertId.'' );
+header( 'Location: start.php?id='.$insertId.'&start=true' );
 }
 ?>
 <?php include ("inc/header.php");?>

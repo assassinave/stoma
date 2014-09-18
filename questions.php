@@ -4,7 +4,14 @@
 require_once 'inc/medoo.min.php';
 $database = new medoo();
 $id = $_GET['id'];
- 
+
+session_start();
+
+if ($_GET['start']) {
+	session_destroy();
+	$_SESSION['count'] = 1;
+}
+
  
 // Number of active stoma questions 
 $stomacount = $database->count("stoma", [
@@ -26,9 +33,12 @@ if ($_GET['test']) {
 	]);
 	
 	
+	$_SESSION['count'] ++;
+	
 	header( 'Location: questions.php?id='.$id.'' );
 
 } else {
+
  
 	// If the test isn't being updated display next test
 	$nexttest = $database->get("test", ["test_id", "stoma_id"], [
