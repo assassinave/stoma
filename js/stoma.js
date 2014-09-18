@@ -1,3 +1,4 @@
+
 function touchHandler(event) {
     var touch = event.changedTouches[0];
 
@@ -22,23 +23,17 @@ function init() {
     document.addEventListener("touchcancel", touchHandler, true);
 }
 
+
 $( document ).ready(function() {
+	
+	
 	$("#myform").validate({
 	  submitHandler: function(form) {
 		$(form).submit();
 	  }
 	});
 	 
-	// Show and hide question conformation 
-	$( ".select-button" ).click(function() {
-	   $( ".question-info" ).hide();
-	   $( ".question-confirm" ).show();
-	});
-	 
-	$( ".choose-button" ).click(function() {
-	   $( ".question-info" ).show();
-	   $( ".question-confirm" ).hide();
-	}); 
+	
 	
 
 	// Submit forms
@@ -50,7 +45,10 @@ $( document ).ready(function() {
   		$( "#admin" ).submit();
 	});
 	
-	init();
+  
+  
+  init();
+  
   $( ".target" ).draggable({
     cursor: 'move',
     containment: 'document',
@@ -58,9 +56,40 @@ $( document ).ready(function() {
   });
   
   function handleDragStop( event, ui ) {
+	  
+	  var startXpos = 350;
+	  var startYpos = 750;
+	  
+	  var offsetXposMinus = startXpos - 50;
+	  var offsetXposPlus = startXpos + 50;
+	  
+	  var offsetYposMinus = startYpos - 50;
+	  var offsetYposPlus = startYpos + 50;
+	  
+	  
 	  var offsetXPos = parseInt( ui.offset.left );
 	  var offsetYPos = parseInt( ui.offset.top );
-	  alert( "Drag stopped!\n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
+	  
+	  if (offsetXPos > offsetXposMinus && offsetXPos < offsetXposPlus && offsetYPos > offsetYposMinus && offsetYPos < offsetYposPlus )  {
+		alert( "Correct! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
+	  //} else if () {
+	    // alert( "grey! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
+	  } else {
+		   alert( "Wrong! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
+	  }
   }
+  
+  
+  // Show and hide question conformation 
+	$( ".select-button" ).click(function() {
+	   $( ".question-info" ).hide();
+	   $( ".question-confirm" ).show();
+	});
+	 
+	$( ".choose-button" ).click(function() {
+	   $( ".question-info" ).show();
+	   $( ".question-confirm" ).hide();
+	}); 
+  
 	
 });
