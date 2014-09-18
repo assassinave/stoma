@@ -15,6 +15,10 @@ $userdetails = $database->get("user", [
 ?>
 <div class="container">
   <div class="results-header">Overview for: <span><strong><?php echo $userdetails["name"]; ?></strong>, <?php echo $userdetails["hospital"]; ?></span></div>
+  
+  <div class="orange-home-results"><img src="images/svg/orange-home.svg" height="55px"/></div>
+  
+  
   <?php foreach($testresults as $data) { ?>
   <div class="results-pod <?php if ($data["correct"] == "yes") {
 	  echo "correct";

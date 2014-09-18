@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="stoma-next">
-    <div class="target"></div>
+    <div class="target"><img src="images/svg/target.svg" height="100px"/></div>
     <div class="btn select-button"><a href="#" class="button small">select</a><img src="images/svg/button-end.svg" height="55px"/></div>
   </div>
 </div>
