@@ -1,5 +1,5 @@
 <div class="container">
-  <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+  <form id="nurse-form" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
   <table>
     <tr>
       <td></td>
@@ -21,7 +21,11 @@
       <td></td>
       <td>
       
-      <input name="stomaSiting" type="submit" id="stomaSiting" value="Start Stoma Siting">
+     <!--<div class="btn"><input name="stomaSiting" type="submit" id="stomaSiting" value="Start Stoma Siting"><img src="images/svg/button-end.svg" height="55px"/></div> -->
+      
+      <div class="btn"><a href="#" class="button med" id="submit-nurse">Start Stoma Siting</a><img src="images/svg/button-end.svg" height="55px"/></div>
+      
+      
       </td>
     </tr>
   </table>

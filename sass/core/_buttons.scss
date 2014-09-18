@@ -18,6 +18,15 @@
 			&.admin {
 				margin: 0;
 			}
+			&.small {
+				width: 300px;
+			}
+			&.med {
+				width: 300px;
+			}
+			&.large {
+				width: 300px;
+			}
 		}
 }
 
@@ -40,45 +49,3 @@
 		}
 		
 }
-
-
-
-
-
-
-/*
-a.button {
-    font-family:verdana; 
-}
-
-a.button:before {
-     content:"";
-     width:56px;
-     height:56px;
-     background: -moz-linear-gradient( right top , #eee 0%,#FFF 100%);
-     background: -webkit-linear-gradient( right top , #eee 0%,#FFF 100%);
-     -moz-transform: rotate(45deg);
-     -webkit-transform: rotate(45deg);
-     display:block;
-     position:absolute;
-     top:0px;
-     right:-28px;
-     z-index:-1;
-}
-
-a.button:after {
-     content:"";
-     width:56px;
-     height:56px;
-     background: -moz-linear-gradient( right top , $orange 0%,$orange 100%);
-     background: -webkit-linear-gradient( right top , $orange 0%,$orange 100%);
-     -moz-transform: rotate(45deg);
-     -webkit-transform: rotate(45deg);
-     display:block;
-     position:absolute;
-     top:0px;
-     right:-16px;
-     z-index:-1;
-
-}
-*/

@@ -55,6 +55,7 @@ if ($_GET['test']) {
 		$type = $data["type"];
 		$position = $data["position"];
 		$info = $data["info"];
+		$image = $data["image"];
 	}
 
 } 

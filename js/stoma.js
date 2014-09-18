@@ -15,4 +15,12 @@ $( document ).ready(function() {
 	   $( ".question-info" ).show();
 	   $( ".question-confirm" ).hide();
 	}); 
+	
+	
+	
+	// Submit forms
+	$( "#submit-nurse" ).click(function() {
+  		$( "#nurse-form" ).submit();
+	});
+	
 });
