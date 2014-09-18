@@ -7,7 +7,7 @@
   <div class="btn"><a href="admin-results-detail.php?id=<?php echo $id; ?>" class="button med">Review Answers</a><img src="images/svg/button-end.svg" height="55px"/></div>
   
   
-  <div class="btn"><img src="images/svg/button-start.svg" height="55px"/><a href="index.php" class="button med">Try Again</a></div>
+  <div class="btn"><img src="images/svg/button-start.svg" height="55px" style="float: left;" /><a href="index.php" class="button med">Try Again</a></div>
   
   
 </div>

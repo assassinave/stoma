@@ -1,5 +1,5 @@
 <div class="container">
-  <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+  <form id="admin" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
     <table>
       <tr>
         <td></td>
@@ -15,7 +15,11 @@
       </tr>
       <tr>
         <td></td>
-        <td><input name="go" type="submit" id="go" value="Go"></td>
+        <td>
+        
+        <div class="btn"><a href="#" class="button small" id="submit-admin">Go</a><img src="images/svg/button-end.svg" height="55px"/></div>
+        
+        </td>
       </tr>
     </table>
   </form>

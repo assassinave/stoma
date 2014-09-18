@@ -23,4 +23,8 @@ $( document ).ready(function() {
   		$( "#nurse-form" ).submit();
 	});
 	
+	$( "#submit-admin" ).click(function() {
+  		$( "#admin" ).submit();
+	});
+	
 });
