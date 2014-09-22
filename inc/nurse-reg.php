@@ -17,7 +17,7 @@
     </tr>
     <tr>
       <td>Email</td>
-      <td><input name="email" type="text" id="email"></td>
+      <td><input name="email" type="text" id="email" data-validation="email"></td>
     </tr>
      <tr>
       <td></td>

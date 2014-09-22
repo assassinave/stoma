@@ -81,10 +81,9 @@ if ($_GET['test']) {
 
 ?>
 <?php include ("inc/header.php");?>
-<?php include ("inc/question-image.php");?>
+<?php include ("inc/details-page-image.php");?>
 <div class="target"><img src="images/svg/target.svg" height="100px"/></div>
-<?php include ("inc/question-info.php");?>
-<?php include ("inc/question-confirm.php"); ?>
+<?php include ("inc/admin-details-page-info.php");?>
 <?php include ("inc/footer.php");?>
 <script>
 $( document ).ready(function() {

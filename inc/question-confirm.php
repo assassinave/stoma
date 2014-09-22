@@ -8,6 +8,6 @@
     <div class="btn choose-button"><img src="images/svg/button-start.svg" height="55px" width="30px" style="float: left;" /><a href="#" class="button">No, choose again</a></div>
   </div>
   <div class="stoma-next">
-    <div class="btn"><a href="questions.php?test=<?php echo $nexttest["test_id"]; ?>&id=<?php echo $id; ?>&next=true" class="button small">Confirm</a><img src="images/svg/button-end.svg" height="55px"/></div>
+    <div class="btn confirm-button"><a href="questions.php?test=<?php echo $nexttest["test_id"]; ?>&id=<?php echo $id; ?>&next=true" class="button small">Confirm</a><img src="images/svg/button-end.svg" height="55px"/></div>
   </div>
 </div>

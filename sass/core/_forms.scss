@@ -3,8 +3,11 @@ form input[type=text] {
 	padding: 0.6em;
 	font-size: 1.0em; 
 	color: $grey;
-	border: none;
+	border: 1px solid $white;
 	width: 100%;
+	.error {
+		border: 1px solid $orange;
+	}
 }
 
 form input[type=submit] {
@@ -21,4 +24,12 @@ form input[type=submit] {
 			display: block;
 			float: left;
 			border: none;
+}
+
+.has-error {
+	span {
+		top: 4px;
+		position: relative;
+	}
+	
 }

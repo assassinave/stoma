@@ -7,7 +7,7 @@ $id = $_GET['id'];
 $correct = $database->count("test", [
     "AND" => [
 		"user_id" => $id,
-		"correct" => "yes"
+		"correct" => "true"
 	]
 ]);
  

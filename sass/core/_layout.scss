@@ -67,6 +67,14 @@ table {
 
 .target {
 	height: 180px;
+	right: 100px;
+	bottom: 200px;
+	position: absolute;
+	z-index: 3000;
+}
+
+.target-area {
+	height: 180px;
 }
 
 .stoma-info {
@@ -87,7 +95,7 @@ table {
 
 .scroll {
 	overflow-y:scroll;
-	height: 600px;
+	height: 900px;
 }
 
 .results-pod {
