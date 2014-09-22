@@ -20,6 +20,8 @@ $userdetails = $database->get("user", [
   
   
   <?php foreach($testresults as $data) { ?>
+  
+  <a href="admin-results-detail-page.php?id=<?php echo $id;?>&test=<?php echo $data["test_id"]; ?>">
   <div class="results-pod <?php if ($data["correct"] == "true") {
 	  echo "correct";
   }else {
@@ -31,11 +33,12 @@ $userdetails = $database->get("user", [
         ]);
 		foreach($stomaresults as $stoma) {
 		?>
-    <div class="image" style="background-image: url(images/<?php echo $stoma["image"];?>); background-size:cover; background-position: bottom;"></div>
+ <div class="image" style="background-image: url(images/<?php echo $stoma["image"];?>); background-size:cover; background-position: bottom;"></div>
     <div class="title"><?php echo $stoma["type"];?></div>
     <?php 
 		}
       ?>
   </div>
+  </a>
   <?php } ?>
 </div>

@@ -17,11 +17,11 @@ $xy = $database->get("stoma", ["x", "y"], [
 
 
 $thistest = $database->get("test", ["test_id", "stoma_id"], [
-		"AND" => [
-			"user_id" => $id,
-			"taken" => "no"
-		]
-	]);
+	"AND" => [
+		"user_id" => $id,
+		"taken" => "no"
+	]
+]);
  
 // Number of active stoma questions 
 $stomacount = $database->count("stoma", [
@@ -76,7 +76,6 @@ if ($_GET['test']) {
 		$x = $data["x"];
 		$y = $data["y"];
 	}
-
 } 
 
 ?>
