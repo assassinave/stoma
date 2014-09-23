@@ -8,25 +8,21 @@
       <td><h1>Nurse Registration</h1></td>
     </tr>
     <tr>
-      <td>Name</td>
+      <td class="title">Name</td>
       <td><input name="name" type="text" id="name"></td>
     </tr>
     <tr>
-      <td>Hospital</td>
+      <td class="title">Hospital</td>
       <td><input name="hospital" type="text" id="hospital"></td>
     </tr>
     <tr>
-      <td>Email</td>
+      <td class="title">Email</td>
       <td><input name="email" type="text" id="email" data-validation="email"></td>
     </tr>
      <tr>
       <td></td>
       <td>
-
-      
-      <div class="btn"><a href="#" class="button med" id="submit-nurse">Start Stoma Siting</a><img src="images/svg/button-end.svg" height="55px"/></div>
-      
-      
+      <div class="btn"><a href="#" class="button med" id="submit-nurse">Start Stoma Siting</a><img src="images/svg/button-end.svg" height="59px"/></div>
       </td>
     </tr>
   </table>

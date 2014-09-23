@@ -1,7 +1,9 @@
-<div class="container">
-  <h1>Welcome</h1>
-  <p>Go through each of the 12 photographic examples and position the target in the correct place to site the stoma according to stoma/body type. Your results will be shown at the end of the test.</p>
-  <h3>Good Luck!</h3>
-  <div class="btn"><a href="nurse-registration.php" class="button med">Nurse Registration</a><img src="images/svg/button-end.svg" height="55px"/></div>
-  <div class="btn"><a href="team-registration.php" class="button med">Team Registration</a><img src="images/svg/button-end.svg" height="55px"/></div>
+<div class="home-header"> <a href="welcome.php"><img src="images/svg/stoma-siting.svg" height="115px"/></a>
+</div>
+
+<div class="home-image"> <a href="welcome.php"><img src="images/stoma10.jpg" width="1080" height="1470" alt=""/></a>
+
+</div>
+
+<div class="home-footer"> <a href="welcome.php"><img src="images/svg/dansac-orange.svg" height="65px"/></a>
 </div>

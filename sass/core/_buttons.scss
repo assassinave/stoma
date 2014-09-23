@@ -19,13 +19,16 @@
 				margin: 0;
 			}
 			&.small {
-				width: 150px;
+				width: 130px;
 			}
 			&.med {
 				width: 300px;
 			}
 			&.large {
 				width: 300px;
+			}
+			&.no-padding {
+				margin: 0 0 0 1em;
 			}
 		}
 }
@@ -37,7 +40,6 @@
 			background-color: $grey;
 			color: $grey-lighter;
 			font-size: 0.8em;
-			margin: 1em 0 0 0;
 			padding: 0.4em;
 			font-weight: 500;
 			font-family: "futuraBT-bold", Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
@@ -46,6 +48,7 @@
 			position: relative;
 			display: block;
 			max-width: 140px;
+			float: left;
 		}
 		
 }

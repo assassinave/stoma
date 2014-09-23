@@ -13,10 +13,10 @@ $userdetails = $database->get("user", [
 ]);
 
 ?>
-<div class="container">
+<div class="container results">
   <div class="results-header">Overview for: <span><strong><?php echo $userdetails["name"]; ?></strong>, <?php echo $userdetails["hospital"]; ?></span></div>
   
-  <div class="orange-home-results"><a href="index.php"><img src="images/svg/orange-home.svg" height="55px"/></a></div>
+  <div class="orange-home-results"><a href="index.php"><img src="images/svg/orange-home.svg" height="61px"/></a></div>
   
   
   <?php foreach($testresults as $data) { ?>
@@ -34,7 +34,12 @@ $userdetails = $database->get("user", [
 		foreach($stomaresults as $stoma) {
 		?>
  <div class="image" style="background-image: url(images/<?php echo $stoma["image"];?>); background-size:cover; background-position: bottom;"></div>
-    <div class="title"><?php echo $stoma["type"];?></div>
+    <div class="title">
+  <?php if ($data["correct"] == "true") {
+	  echo "<span class='tick-cross'><img src='images/svg/tick.svg' height='36px'/></span>";
+  }else {
+	  echo "<span class='tick-cross'><img src='images/svg/cross.svg' height='36px'/></span>";
+  }?><?php echo $stoma["type"];?></div>
     <?php 
 		}
       ?>

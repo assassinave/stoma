@@ -10,6 +10,6 @@
   </div>
   <div class="stoma-next">
     <div class="target-area">&nbsp;</div>
-    <div class="btn select-button"><a href="#" class="button small">select</a><img src="images/svg/button-end.svg" height="55px"/></div>
+    <div class="btn select-button"><a href="#" class="button small">select</a><img src="images/svg/button-end.svg" height="59px"/></div>
   </div>
 </div>

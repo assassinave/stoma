@@ -32,10 +32,10 @@ $( document ).ready(function() {
 	  }
 	  
 	  if (xWithinLimit == "true" && yWithinLimit == "true") { 
-		   alert( "Correct! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
+		   //alert( "Correct! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
 		   window.isCorrect = "true";
 	  } else {
-		   alert( "Wrong! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
+		   //alert( "Wrong! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
 		   window.isCorrect = "false";
 	  }
   }

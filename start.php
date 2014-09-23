@@ -5,11 +5,13 @@ $database = new medoo();
 $datas = $database->select("stoma", "stoma_id",[
 	"active" => "true"
 ]);
+$count = 0;
 foreach($datas as $data)
 {
+$count ++;	
 $database->insert('test', [
 	'user_id' => $id,
-	'stoma_id' => $data["stoma_id"],
+	'stoma_id' => $count,
 	'taken' => "no"
 ]);
 }

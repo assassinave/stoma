@@ -16,4 +16,5 @@ header( 'Location: start.php?id='.$insertId.'&start=true' );
 ?>
 <?php include ("inc/header.php");?>
 <?php include ("inc/nurse-reg.php");?>
+<?php include ("inc/footer-logo.php");?>
 <?php include ("inc/footer.php");?>
