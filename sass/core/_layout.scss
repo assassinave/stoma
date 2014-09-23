@@ -4,8 +4,9 @@ body {
 
 .container {
 	margin: 4em;
-	padding: 50% 0 55% 0;
+	padding: 45% 0 40% 0;
 	position: relative;
+	height: 680px;
 	&.results {
 		margin: 2em; 
 		padding: 4% 0 50% 0;
@@ -48,6 +49,14 @@ body {
 		top: 40px;
 		position: relative;
 		
+	}
+}
+
+
+.header-home-container {
+	padding: 1em;
+	.header-home {
+		float: right;
 	}
 }
 
