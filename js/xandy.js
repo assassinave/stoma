@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   // Draggable code
-  $( ".target" ).draggable({
+$( ".target" ).draggable({
     cursor: 'move',
     stop: handleDragStop
   });
@@ -32,38 +32,29 @@ $( document ).ready(function() {
 	  }
 	  
 	  if (xWithinLimit == "true" && yWithinLimit == "true") { 
-		   //alert( "Correct! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
 		   window.isCorrect = "true";
 	  } else {
-		   //alert( "Wrong! \n\nOffset: (" + offsetXPos + ", " + offsetYPos + ")\n");
 		   window.isCorrect = "false";
 	  }
-  }
-
-
-
+ }
+ 
+ 
+ 
+ 
 
 	
 	$( ".confirm-button" ).click(function() {
-	  // $( ".question-info" ).show();
-	  // $( ".question-confirm" ).hide();
-	   
-	      var testD = 579;
 	   
 		  var correct = isCorrect;
 		  var x = offsetXPos;
 		  var y = offsetYPos;
 		  var testData = globalTestData;
-		  
-		  //alert(correct + " " + x + " " + y + " " + testData);
 
 		  $.ajax({
 			  type:"post",
 			  url:"add-xy.php",
 			  data:"correct="+correct+"&x="+x+"&y="+y+"&test="+testData,
 			  success:function(data){
-				 //$("#info").html(data);
-				 //alert(data);
 			  }
 
 		  });

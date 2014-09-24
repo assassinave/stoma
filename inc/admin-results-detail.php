@@ -1,5 +1,5 @@
 <?php 
-$id = $_GET['id'];
+
 $testresults = $database->select("test", "*", [
 	"user_id" => $id, 
 ]);
@@ -17,7 +17,7 @@ $userdetails = $database->get("user", [
   <div class="results-header">Overview for: <span><strong><?php echo $userdetails["name"]; ?></strong>, <?php echo $userdetails["hospital"]; ?></span></div>
   
   <div class="orange-home-results"><a href="index.php"><img src="images/svg/orange-home.svg" height="61px"/></a></div>
-  
+   
   
   <?php foreach($testresults as $data) { ?>
   

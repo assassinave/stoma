@@ -82,6 +82,21 @@ table {
 table {
 	&.admin {
 		tr {
+			&.odd {
+				td {
+					background-color: $grey-light;
+				}
+				
+			}
+			
+			&.even {
+				td {
+					background-color: $grey;
+				}
+				
+			}
+			
+			
 			position: relative;
 			td {
 				color: $orange;
@@ -89,7 +104,6 @@ table {
 				text-align:left;
 				padding: 8px; 
 				border: 6px solid $grey-dark;
-				background-color: $grey;
 				
 				&.title {
 					font-size: 1.8em;
@@ -145,7 +159,7 @@ table {
 }
 
 .stoma-next {
-	height: 300px;
+	height: 200px;
 	float: right;
 	text-align: center;
 }
@@ -156,7 +170,7 @@ table {
 
 .scroll {
 	overflow-y:scroll;
-	height: 900px;
+	height: 1100px;
 }
 
 .results-pod {

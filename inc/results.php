@@ -18,7 +18,7 @@ if ($correct > 7) {
 
 <div class="center-buttons">
   
-<div class="btn"><a href="admin-results-detail.php?id=<?php echo $id; ?>" class="button med">Review Answers</a><img src="images/svg/button-end.svg" height="59px"/></div>
+<div class="btn"><a href="admin-results-detail.php?id=<?php echo $id; ?>&type=user" class="button med">Review Answers</a><img src="images/svg/button-end.svg" height="59px"/></div>
   
   
 <div class="btn"><img src="images/svg/button-start.svg" height="59px" style="float: left;" /><a href="welcome.php" class="button med">Try Again</a></div>

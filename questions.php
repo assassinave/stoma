@@ -90,6 +90,9 @@ $( document ).ready(function() {
 	// Pass values to Jquery
 	window.xposition = "<?php echo $x; ?>";
 	window.yposition = "<?php echo $y; ?>";
+	
+	
+	
 	window.globalTestData = <?php echo $thistest['test_id']; ?>;
 });
 </script>

@@ -1,5 +1,5 @@
 <div class="container">
-  <form action="#">
+  <form id="nurse-form" action="team-registration.php" method="post">
   <table>
     <tr>
       <td></td>

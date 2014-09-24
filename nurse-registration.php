@@ -8,7 +8,9 @@ $database = new medoo();
 $insertId = $database->insert('user', [
 	'name' => $_POST['name'],
 	'hospital' => $_POST['hospital'],
-	'email' => $_POST['email']
+	'email' => $_POST['email'],
+	'type' => "nurse"
+	
 ]);
 
 header( 'Location: start.php?id='.$insertId.'&start=true' );
