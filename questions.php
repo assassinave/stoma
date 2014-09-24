@@ -75,22 +75,43 @@ if ($_GET['test']) {
 		$image = $data["image"];
 		$x = $data["x"];
 		$y = $data["y"];
+		$x2 = $data["x2"];
+		$y2 = $data["y2"];
 	}
 } 
 
 ?>
 <?php include ("inc/header.php");?>
-<?php include ("inc/question-image.php");?>
-<div class="target"><img src="images/svg/target.svg" height="100px"/></div>
-<?php include ("inc/question-info.php");?>
-<?php include ("inc/question-confirm.php"); ?>
+
+<?php if ($x2 > 0) { ?>
+
+	<?php include ("inc/question-image.php");?>
+    <div class="target"><img src="images/svg/target.svg" height="100px"/></div>
+    <div class="target2 hide"><img src="images/svg/target.svg" height="100px"/></div>
+    <?php include ("inc/double-question-info-one.php");?>
+    <?php include ("inc/double-question-info-two.php"); ?>
+    <?php include ("inc/double-question-confirm.php"); ?>
+
+<?php } else { ?>
+
+	<?php include ("inc/question-image.php");?>
+    <div class="target"><img src="images/svg/target.svg" height="100px"/></div>
+    <?php include ("inc/question-info.php");?>
+    <?php include ("inc/question-confirm.php"); ?>
+
+<?php } ?>
+
+
+
+
 <?php include ("inc/footer.php");?>
 <script>
 $( document ).ready(function() {
 	// Pass values to Jquery
 	window.xposition = "<?php echo $x; ?>";
 	window.yposition = "<?php echo $y; ?>";
-	
+	window.xposition2 = "<?php echo $x2; ?>";
+	window.yposition2 = "<?php echo $y2; ?>";
 	
 	
 	window.globalTestData = <?php echo $thistest['test_id']; ?>;
