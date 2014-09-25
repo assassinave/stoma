@@ -7,14 +7,27 @@ $testresults = $database->select("test", "*", [
 $userdetails = $database->get("user", [
 	"name",
 	"hospital",
-	"email"
+	"email",
+	"type"
 ], [
 	"user_id" => $id
 ]);
 
 ?>
 <div class="container results">
+  
+  
+ <?php if ($userdetails["type"] == "nurse") {  ?>
+  
   <div class="results-header">Overview for: <span><strong><?php echo $userdetails["name"]; ?></strong>, <?php echo $userdetails["hospital"]; ?></span></div>
+  
+ <?php } else {?>
+  
+   <div class="results-header">Overview for: <span><strong><?php echo $userdetails["name"]; ?></strong></span></div>
+   
+ <?php } ?>
+  
+  
   
   <div class="orange-home-results"><a href="index.php"><img src="images/svg/orange-home.svg" height="61px"/></a></div>
    
@@ -36,9 +49,9 @@ $userdetails = $database->get("user", [
  <div class="image" style="background-image: url(images/<?php echo $stoma["image"];?>); background-size:cover; background-position: bottom;"></div>
     <div class="title">
   <?php if ($data["correct"] == "true") {
-	  echo "<span class='tick-cross'><img src='images/svg/tick.svg' height='36px'/></span>";
+	  echo "<span class='tick-cross'><img src='images/svg/tick.svg' height='47px'/></span>";
   }else {
-	  echo "<span class='tick-cross'><img src='images/svg/cross.svg' height='36px'/></span>";
+	  echo "<span class='tick-cross'><img src='images/svg/cross.svg' height='47px'/></span>";
   }?><?php echo $stoma["type"];?></div>
     <?php 
 		}
@@ -46,4 +59,8 @@ $userdetails = $database->get("user", [
   </div>
   </a>
   <?php } ?>
+  
+
+  <div class="btn" style="left: 20px; top: 40px; position: relative;"><img src="images/svg/button-start.svg" height="59px" style="float: left;" /><a href="admin-results.php?id=<?php echo $id; ?>&type=admin" class="button small">Back</a></div>
+  
 </div>

@@ -1,7 +1,7 @@
 <div class="padding double-question-confirm hide space">
   <div class="">
     <div class="">
-      <h2>Are you happy with your choice?</h2>
+      <h2 style="margin: 0 0 100px 0;">Are you happy with your choice?</h2>
     </div>
   </div>
   <div class="stoma-prev">

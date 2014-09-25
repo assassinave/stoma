@@ -86,8 +86,8 @@ if ($_GET['test']) {
 <?php if ($x2 > 0) { ?>
 
 	<?php include ("inc/question-image.php");?>
-    <div class="target"><img src="images/svg/target.svg" height="100px"/></div>
-    <div class="target2 hide"><img src="images/svg/target.svg" height="100px"/></div>
+    <div class="target"><span style="padding: 0.5em; color: #FFFFFF; background-color: #ff5e15; position: absolute; top: -60px; left: -16px;">Colostomy</span><img src="images/svg/target.svg" height="100px"/></div>
+    <div class="target2 hide"><span style="padding: 0.5em; color: #FFFFFF; background-color: #ff5e15; position: absolute; top: -60px; left: -12px;">Urostomy</span><img src="images/svg/target.svg" height="100px"/></div>
     <?php include ("inc/double-question-info-one.php");?>
     <?php include ("inc/double-question-info-two.php"); ?>
     <?php include ("inc/double-question-confirm.php"); ?>

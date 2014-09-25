@@ -17,5 +17,7 @@ header( 'Location: admin-results-detail-page.php?id'.$id.'=23&test='.$firsttestr
 
 ?>
 <?php include ("inc/header.php");?>
+
 <?php include ("inc/admin-results-detail.php");?>
+
 <?php include ("inc/footer.php");?>

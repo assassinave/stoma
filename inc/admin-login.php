@@ -13,7 +13,7 @@
         <td><input name="username" type="text" id="username" style="height: 30px; position:relative; top: -3px;"></td>
         <td>
         
-        <div class="btn"><a href="#" class="button small no-padding" id="submit-admin">Go</a><img src="images/svg/button-end.svg" height="58px"/></div>
+        <div class="btn"><a href="#" class="button xsmall no-padding" id="submit-admin">Go</a><img src="images/svg/button-end.svg" height="58px"/></div>
         
         </td>
         </tr>

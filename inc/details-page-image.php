@@ -9,11 +9,11 @@
 </div>
 
 
-<div class="target" style="top: <?php echo $y; ?>px; left: <?php echo $x; ?>px;"><img src="images/svg/target-green.svg" height="100px"/></div>
+<div class="target-green" style="top: <?php echo $y; ?>px; left: <?php echo $x; ?>px;"><img src="images/svg/target-green.svg" height="100px"/><img src="images/svg/p-tick.svg" height="70px" style="top: -34px; left: 80px; position: absolute;" /></div>
 
 
 <?php if ($gettest["correct"] == "false") {  ?>
-<div class="target" style="top: <?php echo $gettest["y"]; ?>px; left: <?php echo $gettest["x"]; ?>px;"><img src="images/svg/target-white.svg" height="100px"/></div>
+<div class="target-white" style="top: <?php echo $gettest["y"]; ?>px; left: <?php echo $gettest["x"]; ?>px;"><img src="images/svg/target-white.svg" height="100px"/><img src="images/svg/p-cross.svg" height="70px" style="top: -34px; left: 80px; position: absolute;" /></div>
 <?php }  ?>
 
 </div>

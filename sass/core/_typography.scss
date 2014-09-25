@@ -1,7 +1,7 @@
 body { font-family: 'FuturaStd-Book', 'Arial', sans-serif; } 
 
 h1 {
-	font-size: 3.5em;
+	font-size: 4.5em;
 	color: $orange;
 	font-weight: 200;
 	padding: 0;
@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2em;
+	font-size: 2.6em;
 	color: $orange;
 	font-weight: 200;
 	padding: 0;
@@ -28,9 +28,17 @@ h3 {
 }
 
 P {
-	font-size: 1.5em;
+	font-size: 1.9em;
 	color: $white;
-	font-weight: 200;
+	font-weight: 100;
+}
+
+
+.stoma-text {
+	p {
+		font-size: 1.4em;
+	}
+	
 }
 
 .header {
@@ -43,4 +51,12 @@ P {
 		left: 10px;
 		position: relative;
 	}
+}
+
+.white-text {
+	td {
+
+	color: $white !important;
+	}
+
 }

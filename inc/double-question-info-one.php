@@ -11,6 +11,6 @@
   </div>
   <div class="stoma-next">
     <div class="target-area">&nbsp;</div>
-    <div class="btn double-select-button-one"><a href="#" class="button small">select</a><img src="images/svg/button-end.svg" height="59px"/></div>
+    <div class="btn double-select-button-one"><a href="#" class="button small">Select</a><img src="images/svg/button-end.svg" height="59px"/></div>
   </div>
 </div>
