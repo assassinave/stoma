@@ -79,9 +79,6 @@ $( ".target" ).draggable({
  }
 
 
-
-  
-
 	
 	$( ".confirm-button" ).click(function() {
 		  var correct = isCorrect;

@@ -115,11 +115,14 @@ table {
 					margin: 0;
 					width: 20%;
 				}
+				&.points {
+					width: 20%;
+				}
 				&.name {
 					width: 25%;
 				}
 				&.hospital {
-					width: 60%;
+					width: 40%;
 				}
 				h1 {
 					text-align:left;
