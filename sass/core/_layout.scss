@@ -218,6 +218,8 @@ table {
 }
 
 .results-header {
+	font-size: 1em;
+	font-weight: bold;
 	padding: 0.8em; 
 	background-color: $white;
 	color: $orange;
@@ -226,6 +228,7 @@ table {
 	display: inline;
 	float: left;
 	span {
+		font-weight: normal;
 		color: $grey;
 	}
 }

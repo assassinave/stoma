@@ -1,14 +1,12 @@
 <?php 
-$testdetails = $database->select("user", "*");
+
 ?>
 
 <div class="container results">
   <h1>Stoma Nurse Answers</h1>
   
-
-
    <div class="search-form"> 
-    <form action="admin-results.php">
+    <form action="admin-results.php" id="search" method="post">
   <table>
   <tr>
   <td> <div class="input">
@@ -16,7 +14,7 @@ $testdetails = $database->select("user", "*");
     </div>
     </td>
     <td style="padding-top: 13px;">
-    <div class="btn"><a href="admin-results.php?id=<?php echo $data["user_id"]; ?>&type=admin" class="admin">Search </a><img src="images/svg/button-end.svg" height="58px"/></div>
+    <div class="btn"><a href="#" class="admin" id="submit-search">Search </a><img src="images/svg/button-end.svg" height="58px"/></div>
     
     </td>
   </tr>

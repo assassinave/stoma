@@ -8,7 +8,7 @@ $test = $_GET['test'];
 session_start();
  
 // If the test isn't being updated display next test
-$xy = $database->get("stoma", ["x", "y"], [
+$xy = $database->get("stoma", ["x", "y", "x2", "y2"], [
 		"user_id" => $id
 ]);
  
@@ -36,6 +36,8 @@ foreach($testdetails as $data)
 	$image = $data["image"];
 	$x = $data["x"];
 	$y = $data["y"];
+	$x2 = $data["x2"];
+	$y2 = $data["y2"];
 }
 
 ?>

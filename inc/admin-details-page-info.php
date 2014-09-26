@@ -7,13 +7,25 @@
     
       <p> 
 		<?php 
-        if ($gettest["correct"] == "true") {
+		
+		
+			
+			
+			if ($gettest["correct"] == "true") {
 			echo "<span class='large-target'><img src='images/svg/target-green.svg' height='120px'/></span>";
             echo "<div class='header correct-header'>Correct</div>";
         } else {
 			echo "<span class='large-target'><img src='images/svg/target-white.svg' height='120px'/></span>";
             echo "<div class='header correct-header'>Incorrect</div>";
         }
+			
+			
+		
+		
+		
+		
+		
+        
         ?>
       </p> 
     </div>

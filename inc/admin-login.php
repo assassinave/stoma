@@ -6,8 +6,6 @@
         <td colspan="2"><h1>Admin Login</h1></td>
       </tr>
       
-      
-      
       <tr>
         <td class="title">Username</td>
         <td><input name="username" type="text" id="username" style="height: 30px; position:relative; top: -3px;"></td>

@@ -9,6 +9,10 @@ $( document ).ready(function() {
   		$( "#admin" ).submit();
 	});
 	
+	$( "#submit-search" ).click(function() {
+  		$( "#search" ).submit();
+	});
+	
 	
 	// Show and hide question conformation 
 	$( ".select-button" ).click(function() {

@@ -98,13 +98,22 @@ $( ".target" ).draggable({
 	 
 	 
 	 $( ".confirm-button" ).click(function() {
-		  var correct = isCorrect;
+		  //var correct = isCorrect;
 		  var x = offsetXPos;
 		  var y = offsetYPos;
 		  
 		  var correct2 = isCorrect2;
 		  var x2 = offsetXPos2;
 		  var y2 = offsetYPos2;
+		  
+		  
+
+			  
+		  if (isCorrect == 'true' || isCorrect2 == 'true') {
+			  correct  = "true";
+		  } else {
+			  correct  = "false";
+		  }
 		  
 		  var testData = globalTestData;
    
