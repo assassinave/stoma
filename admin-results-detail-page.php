@@ -18,7 +18,7 @@ $stomacount = $database->count("stoma", [
 ]);
  
 // If the test isn't being updated display next test
-$gettest = $database->get("test", ["test_id", "stoma_id", "x", "y", "correct"], [
+$gettest = $database->get("test", ["test_id", "stoma_id", "x", "y", "x2", "y2", "correct"], [
 		"test_id" => $test
 ]);
  

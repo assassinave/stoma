@@ -8,9 +8,14 @@ $database = new medoo();
 $search = $_POST['search'];
 
 $testdetails = $database->select("user", "*", [
+
 	'LIKE' => [
-		'name' => $search
+		'OR' => [
+			'name' => $search,
+		'hospital' => $search
+		]
 	]
+	
 ]);
 
 
